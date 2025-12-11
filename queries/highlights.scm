@@ -17,6 +17,13 @@
 "inline" @keyword
 "return" @keyword
 "sizeof" @keyword
+"typeof" @keyword
+"countof" @keyword
+"_Countof" @keyword
+"static_assert" @keyword
+"_Static_assert" @keyword
+"alignof" @keyword
+"alignas" @keyword
 "static" @keyword
 "struct" @keyword
 "switch" @keyword
@@ -32,6 +39,11 @@
 "#if" @keyword
 "#ifdef" @keyword
 "#ifndef" @keyword
+"#elifdef" @keyword
+"#elifndef" @keyword
+"#embed" @keyword
+"#warning" @keyword
+"#error" @keyword
 "#include" @keyword
 (preproc_directive) @keyword
 
