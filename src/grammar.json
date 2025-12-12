@@ -9943,7 +9943,7 @@
     },
     "macro_type_specifier": {
       "type": "PREC_DYNAMIC",
-      "value": -1,
+      "value": 0,
       "content": {
         "type": "SEQ",
         "members": [
