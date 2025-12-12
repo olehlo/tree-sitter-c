@@ -160,6 +160,10 @@
         "named": true
       },
       {
+        "type": "defer_expression",
+        "named": true
+      },
+      {
         "type": "extension_expression",
         "named": true
       },
@@ -1424,6 +1428,22 @@
           "named": true
         }
       ]
+    }
+  },
+  {
+    "type": "defer_expression",
+    "named": true,
+    "fields": {
+      "value": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "expression",
+            "named": true
+          }
+        ]
+      }
     }
   },
   {
@@ -4445,6 +4465,10 @@
     "named": false
   },
   {
+    "type": "_Defer",
+    "named": false
+  },
+  {
     "type": "_Generic",
     "named": false
   },
@@ -4623,6 +4647,10 @@
   },
   {
     "type": "default",
+    "named": false
+  },
+  {
+    "type": "defer",
     "named": false
   },
   {
