@@ -1414,7 +1414,7 @@ module.exports = grammar({
       ';',
     ),
 
-    macro_type_specifier: $ => prec.dynamic(-1, seq(
+    macro_type_specifier: $ => prec.dynamic(0, seq(
       field('name', $.identifier),
       '(',
       commaSep1($.type_descriptor),
