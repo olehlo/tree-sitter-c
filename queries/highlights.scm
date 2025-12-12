@@ -22,6 +22,8 @@
 "_Countof" @keyword
 "static_assert" @keyword
 "_Static_assert" @keyword
+"_Defer" @keyword
+"defer" @keyword
 "alignof" @keyword
 "alignas" @keyword
 "static" @keyword

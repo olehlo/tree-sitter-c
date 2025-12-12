@@ -988,6 +988,7 @@ module.exports = grammar({
       $.cast_expression,
       $.pointer_expression,
       $.sizeof_expression,
+      $.defer_expression,
       $.static_assert_expression,
       $.typeof_expression,
       $.countof_expression,
@@ -1127,6 +1128,11 @@ module.exports = grammar({
         field('value', $.expression),
         seq('(', field('type', $.type_descriptor), ')'),
       ),
+    )),
+
+    defer_expression: $ => prec(PREC.SIZEOF, seq(
+      choice('defer', '_Defer'),
+      field('value', $.expression),
     )),
 
     alignof_expression: $ => prec(PREC.SIZEOF, seq(
