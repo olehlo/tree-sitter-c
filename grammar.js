@@ -1161,7 +1161,6 @@ module.exports = grammar({
       ')',
     )),
 
-
     generic_expression: $ => prec(PREC.CALL, seq(
       '_Generic',
       '(',
