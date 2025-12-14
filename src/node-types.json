@@ -188,6 +188,10 @@
         "named": true
       },
       {
+        "type": "meta_operator_expression",
+        "named": true
+      },
+      {
         "type": "null",
         "named": true
       },
@@ -2426,6 +2430,22 @@
     }
   },
   {
+    "type": "meta_operator_expression",
+    "named": true,
+    "fields": {
+      "expr": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "expression",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
     "type": "ms_based_modifier",
     "named": true,
     "fields": {},
@@ -4254,6 +4274,10 @@
   },
   {
     "type": "#warning",
+    "named": false
+  },
+  {
+    "type": "$",
     "named": false
   },
   {
