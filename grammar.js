@@ -984,6 +984,7 @@ module.exports = grammar({
       $.conditional_expression,
       $.assignment_expression,
       $.unary_expression,
+      $.meta_operator_expression,
       $.update_expression,
       $.cast_expression,
       $.pointer_expression,
@@ -1065,6 +1066,14 @@ module.exports = grammar({
     unary_expression: $ => prec.left(PREC.UNARY, seq(
       field('operator', choice('!', '~', '-', '+')),
       field('argument', $.expression),
+    )),
+
+    // Support for custom $() syntax
+    meta_operator_expression: $ => prec.left(PREC.UNARY, seq(
+      '$',
+      '(',
+      field('expr', $.expression),
+      ')',
     )),
 
     binary_expression: $ => {
